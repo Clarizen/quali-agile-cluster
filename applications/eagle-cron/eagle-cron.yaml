@@ -1,0 +1,15 @@
+infrastructure:
+configuration:
+  healthcheck:
+    script: eagle-cron-health-check.sh
+    timeout: 1000
+  start:
+    script: eagle-cron-start.sh
+source:
+  image:
+    docker_image:
+    - name: alpine
+      tag: 3.7
+  os_type: linux
+kind: application
+spec_version: 1

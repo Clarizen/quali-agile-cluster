@@ -1,0 +1,7 @@
+kind: blueprint
+clouds: k8s
+spec_version: 1
+applications:
+- eagle-web:
+    instances: 1
+environmentType: sandbox

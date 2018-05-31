@@ -1,0 +1,22 @@
+infrastructure:
+connectivity:
+  external:
+  - port_info:
+      port: 4000
+  compute:
+    spec:
+      kubernetes:
+        cpu: 500m
+        ram: 500Mi
+configuration:
+  healthcheck:
+    wait_for_ports: 4000
+    timeout: 180
+source:
+  image:
+    docker_image:
+    - name: 918989879316.dkr.ecr.eu-west-1.amazonaws.com/eagle/web
+      tag: eagle-eagleweb_integration_281
+  os_type: linux
+kind: application
+spec_version: 1
