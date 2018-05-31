@@ -16,7 +16,7 @@ configuration:
 source:
   image:
     docker_image:
-    - name: 918989879316.dkr.ecr.eu-west-2.amazonaws.com/eagle/web
+    - name: 918989879316.dkr.ecr.eu-west-2.amazonaws.com/eagle/web:eagle-eagleweb_qa_1
       tag: eagle-eagleweb_qa_1
   os_type: linux
 kind: application
