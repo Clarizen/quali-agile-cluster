@@ -4,11 +4,11 @@ infrastructure:
     - port_info:
         port: 4000
         path: ''
-    compute:
-      spec:
-        kubernetes:
-          cpu: 500m
-          ram: 500Mi
+  compute:
+    spec:
+      kubernetes:
+        cpu: 500m
+        ram: 500Mi
 configuration:
   healthcheck:
     wait_for_ports: 4000
