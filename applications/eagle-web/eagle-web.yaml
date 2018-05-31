@@ -14,7 +14,7 @@ configuration:
     wait_for_ports: 4000
     timeout: 180
   start:
-    script: eagle-web.sh
+    script: eagle-web-start.sh
 source:
   image:
     docker_image:
